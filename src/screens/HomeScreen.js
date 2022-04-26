@@ -1,11 +1,9 @@
-import React from 'react';
-import { Text, StyleSheet, View, Button, TouchableOpacity } from 'react-native';
-
+import React from "react";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = ({ navigation }) => {
-
   return (
-    <View >
+    <View>
       <Text style={styles.text}>My App</Text>
 
       <Button
@@ -20,15 +18,19 @@ const HomeScreen = ({ navigation }) => {
         title="Go to Image Demo"
         onPress={() => navigation.navigate("Image")}
       />
-       <Button
+      <Button
         title="Go to Counter Demo"
         onPress={() => navigation.navigate("Counter")}
       />
-        <Button
+      <Button
         title="Go to Color Demo"
         onPress={() => navigation.navigate("Color")}
       />
-    </View >
+      <Button
+        title="Go to Square Demo"
+        onPress={() => navigation.navigate("Square")}
+      />
+    </View>
   );
 };
 
@@ -36,10 +38,8 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 30,
     textAlign: "center",
-    padding: 10,
-  },
+    padding: 10
+  }
 });
 
 export default HomeScreen;
-
-
